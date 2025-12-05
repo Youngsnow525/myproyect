@@ -1,0 +1,99 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0e0e0;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 20px;
+}
+
+#dashboard-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #bebebe, 
+                -6px -6px 12px #ffffff;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 1px #ffffff, -1px -1px 1px #bebebe;
+}
+
+.update-info {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+}
+
+#price-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.price-card {
+    background: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 3px 3px 6px #bebebe, 
+                inset -3px -3px 6px #ffffff;
+    transition: all 0.2s;
+}
+
+.price-card:hover {
+    box-shadow: 6px 6px 12px #bebebe, 
+                -6px -6px 12px #ffffff;
+}
+
+.price-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+    text-shadow: 0.5px 0.5px 0.5px #ffffff;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1a1a1a;
+}
+
+.change {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.up {
+    /* Muestra el cambio positivo con un color gris oscuro para mantener el monocromo */
+}
+.up .change {
+    color: #333333; 
+}
+
+.down {
+    /* Muestra el cambio negativo con un color gris claro */
+}
+.down .change {
+    color: #666666; 
+}
+
+#loader {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 40px;
+    color: #666;
+}
+
+.error-info {
+    color: #cc0000; 
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
